@@ -1,0 +1,203 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f9fb;
+  color: #333;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #38a169;
+}
+.nav a {
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+.cart-count {
+  background-color: #38a169;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  margin-left: 0.3rem;
+}
+
+/* Landing Page */
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.landing h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.landing p {
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+.landing button {
+  padding: 0.75rem 1.5rem;
+  background-color: #38a169;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.landing button:hover {
+  background-color: #2f855a;
+}
+
+/* Products Page */
+.products {
+  padding: 2rem;
+}
+.products h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+/* Plant Card */
+.plant-card {
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: transform 0.2s;
+}
+.plant-card:hover {
+  transform: translateY(-4px);
+}
+.plant-card img {
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+.plant-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.plant-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.plant-card button {
+  background-color: #3182ce;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.plant-card button:hover {
+  background-color: #2b6cb0;
+}
+
+/* Cart Page */
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.cart-item img {
+  height: 80px;
+  object-fit: contain;
+}
+.cart-details {
+  flex: 1;
+  padding: 0 1rem;
+}
+.cart-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.cart-actions button {
+  background-color: #e53e3e;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.cart-actions button:hover {
+  background-color: #c53030;
+}
+.cart-summary {
+  margin-top: 1rem;
+  text-align: right;
+}
+.cart-summary h3 {
+  font-size: 1.3rem;
+}
+
+/* Utility Classes */
+.btn {
+  display: inline-block;
+  background-color: #38a169;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+.btn:hover {
+  background-color: #2f855a;
+}
+img {
+  height: 400px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
